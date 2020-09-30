@@ -1,4 +1,4 @@
-# Exercise 1
+# Exercise 2
 
 1) What are the differences between statically and dynamically typed langauges, what are the advantages of each?
    <br/> 
@@ -10,6 +10,9 @@
    - some languages have a *type interface*
    &nbsp;
       - the ability to deduce the type of a variable on its own
+   - variables have some address in memory that will point to another address in memory (what the variable is assigned to)
+   &nbsp;
+      - when the variable is reassigned, the previous value's memory is freed to avoid memory wastage
    
    *Advantage:* all kinds of checking can be done by the compiler, therfore a lot of trivial bugs can be caught earlier on
    
@@ -33,7 +36,14 @@
 3) If a and b are instaniated boolean variables, what does the following evaluate to? Do you need more information? Why?
 
 	`!((a || b) && !(b || ! a || ! b))`
-   
+	```
+	b || ! a || ! b == true - because of the b || !b
+	so...
+	  !((a || b) && !true)
+	≡ !((a || b) && false)
+	≡ !(false)
+	≡ true
+	```
 
 4) Consider these variable declarations:
 int x = 2;
