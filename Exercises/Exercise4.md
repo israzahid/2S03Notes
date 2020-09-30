@@ -14,30 +14,32 @@ for(int i = 0; i < n; i = i * 2){
 ```
 Answer: `infinite` because of `i = 0`
 
-
+```
 for(int i = 0; i < n; i++){
 	for (j = 0; j < n; j++){
 		STATEMENT;
 	}
 }
-
+```
 Answer: `n^2`
 - the inner loops is called n times and the outer loop runs n times
 
-
+```
 for(int i = 0; i < n; i++){
 	for (j = 0; j < n; j = j * 2){
 		STATEMENT;
 	}
 }
+```
 
+```
 for(int i = 0; i < n; i++){
-	for (j = i; j < n; j = j * 2){
+	for (j = i; j < n; j = j++){
 		STATEMENT;
 	}
 }
-
-
+```
+Answer: `total = n + (n - 1) + (n - 2) + ... + 1 = n(n + 1)/2
 2) In the videos we saw a method similar to below:
 
 	public static void nested(int outer, int inner) {
@@ -60,6 +62,13 @@ i = 3, j = 8
 i = 4, j = 2
 
 3) Why do arrays need to know their length ahead of time? It seems like a disadvantage... but is there an advantage? How do you think "lookups" work? Note, a lookup is when you ask the system what a[i] is. Hint: when we have a 10000 length array, we want a[5000] and aa[15] to evaluate relatively quickly. We'll talk about how exactly arrays are stored in memory in lecture.
+
+- needs to allocate memory ahead of time
+&nbsp;
+- creates 'addressses' for where each data value will be stored
+- contiguous, it's easier to find an address very quickly because it is already located
+- without the contiguous structure, you have to iterate through everything to reach an address
+- summary: easy and fast lookups
 
 4) We've been using arrays since the first week of this course. Where? How?
 
