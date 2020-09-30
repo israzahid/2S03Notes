@@ -59,6 +59,7 @@ c) x + c + "";
 Tinker around with some of the Java operations. Find something which suprised you. Does something behave differently from other languages you've used? Hopefully, some of you will be willing to share what you found with the class. 
 
 b) Do some indepdent research what are & and | actually doing? Why does it functionally look equivalent to && and ||?
+- & and | evaluates both operations while && || evaluate the second only if the first one is false
 
 6) NO IF STATEMENT CHALLANGE: Implement the following methods without using an if statement; only using material we have covered thus far.
 
