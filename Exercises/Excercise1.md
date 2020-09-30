@@ -104,8 +104,6 @@ so...
 </li>
 <li>
 <p>Consider these variable declarations:</p>
-</li>
-</ol>
 <pre><code>int x = 2;
 char c = 'a';
 </code></pre>
@@ -120,17 +118,18 @@ a2
 <pre><code>ain
 99
 </code></pre>
-<ol start="5">
-<li></li>
-</ol>
+</li>
+<li>
 <p>a) Tinker around with some of the Java operations. Find something which suprised you. Does something behave differently from other languages you’ve used? Hopefully, some of you will be willing to share what you found with the class.</p>
 <p>b) Do some indepdent research what are &amp; and | actually doing? Why does it functionally look equivalent to &amp;&amp; and ||?</p>
+</li>
+</ol>
 <ul>
 <li>&amp; and | evaluates both operations while &amp;&amp; || evaluate the second only if the first one is false</li>
 </ul>
 <ol start="6">
-<li>NO IF STATEMENT CHALLANGE: Implement the following methods without using an if statement; only using material we have covered thus far.</li>
-</ol>
+<li>
+<p>NO IF STATEMENT CHALLANGE: Implement the following methods without using an if statement; only using material we have covered thus far.</p>
 <p>a) public static double myAbsoluteValue(double x){<br>
 return Math.abs(x);<br>
 }</p>
@@ -138,4 +137,6 @@ return Math.abs(x);<br>
 <p>public static int pizzasToOrder(int child, int adult, int teen){<br>
 …<br>
 }</p>
+</li>
+</ol>
 
