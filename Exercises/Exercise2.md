@@ -18,7 +18,7 @@
    
    **Dynamically Typed:**
       - the type is associated with run time values
-   <br/>
+   
    *Advantage:* quicker writing
 
 2) Java has 8 primitive data types. What are they, how are they used? 
