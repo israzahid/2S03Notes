@@ -1,8 +1,3 @@
----
-
-
----
-
 <h1 id="exercise-2">Exercise 2</h1>
 <ol>
 <li>
