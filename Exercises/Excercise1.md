@@ -7,24 +7,19 @@
 <ol>
 <li>
 <p>What are the differences between statically and dynamically typed langauges, what are the advantages of each?<br>
-<br><br>
-<br><br>
 <strong>Statically Typed:</strong></p>
 <ul>
-<li>if the variable type is known at compile time<br>
-&nbsp;
+<li>if the variable type is known at compile time
 <ul>
 <li>must specify what type each variable is</li>
 </ul>
 </li>
-<li>some languages have a <em>type interface</em><br>
-&nbsp;
+<li>some languages have a <em>type interface</em>
 <ul>
 <li>the ability to deduce the type of a variable on its own</li>
 </ul>
 </li>
-<li>variables have some address in memory that will point to another address in memory (what the variable is assigned to)<br>
-&nbsp;
+<li>variables have some address in memory that will point to another address in memory (what the variable is assigned to)
 <ul>
 <li>when the variable is reassigned, the previous value’s memory is freed to avoid memory wastage</li>
 </ul>
@@ -130,13 +125,16 @@ a2
 <ol start="6">
 <li>
 <p>NO IF STATEMENT CHALLANGE: Implement the following methods without using an if statement; only using material we have covered thus far.</p>
-<p>a) public static double myAbsoluteValue(double x){<br>
-return Math.abs(x);<br>
-}</p>
+<p>a)</p>
+<pre><code>	public static double myAbsoluteValue(double x){
+		return Math.abs(x);
+	}
+</code></pre>
 <p>b) You’re ordering pizzas for a party. In general, a child eats 2 slices of pizza, and adult eats 3, and a teenager eats 4. Pizzas have 8 slices total. Implement the function below which gives you the number of guests of each age group and returns the number of pizzas you should order. Bonus: find a solution without using the math library.</p>
-<p>public static int pizzasToOrder(int child, int adult, int teen){<br>
-…<br>
-}</p>
+<pre><code>	public static int pizzasToOrder(int child, int adult, int teen){
+		...
+	}
+</code></pre>
 </li>
 </ol>
 
