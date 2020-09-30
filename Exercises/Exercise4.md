@@ -40,7 +40,7 @@ for(int i = 0; i < n; i++){
 }
 ```
 Answer: `total = n + (n - 1) + (n - 2) + ... + 1 = n(n + 1)/2`
-2) In the videos we saw a method similar to below:
+2. In the videos we saw a method similar to below:
 
 	public static void nested(int outer, int inner) {
 		for(int i = n; i < outer; i++) {
@@ -61,7 +61,7 @@ i = 3, j = 2
 i = 3, j = 8
 i = 4, j = 2
 
-3) Why do arrays need to know their length ahead of time? It seems like a disadvantage... but is there an advantage? How do you think "lookups" work? Note, a lookup is when you ask the system what a[i] is. Hint: when we have a 10000 length array, we want a[5000] and aa[15] to evaluate relatively quickly. We'll talk about how exactly arrays are stored in memory in lecture.
+3. Why do arrays need to know their length ahead of time? It seems like a disadvantage... but is there an advantage? How do you think "lookups" work? Note, a lookup is when you ask the system what a[i] is. Hint: when we have a 10000 length array, we want a[5000] and aa[15] to evaluate relatively quickly. We'll talk about how exactly arrays are stored in memory in lecture.
 
 - needs to allocate memory ahead of time
 &nbsp;
@@ -70,10 +70,10 @@ i = 4, j = 2
 - without the contiguous structure, you have to iterate through everything to reach an address
 - summary: easy and fast lookups
 
-4) We've been using arrays since the first week of this course. Where? How?
+4. We've been using arrays since the first week of this course. Where? How?
 
-5) Do some research on java.util.Arrays. You'll find that in the videos we reinvented the wheel on a few methods. What are they? 
+5. Do some research on java.util.Arrays. You'll find that in the videos we reinvented the wheel on a few methods. What are they? 
 
 Sorting
 
-a) In the videos we saw how to implement selection sort on an arry. Do some research on different sorting algorithms. Try implementing a few. Some may be too complicated for your current knowledge (don't worry we'll get there). But you should at least be able to implement insertion sort and bubble sort. Trace through your implementations, what are the worst case number of comparisons and swaps that you must make. Do the same thing with selection sort. In general these sorting aglorithms are considered bad, but do they offer any advantages? Are there contexts where one might consider using them?
+&nbsp; a. In the videos we saw how to implement selection sort on an arry. Do some research on different sorting algorithms. Try implementing a few. Some may be too complicated for your current knowledge (don't worry we'll get there). But you should at least be able to implement insertion sort and bubble sort. Trace through your implementations, what are the worst case number of comparisons and swaps that you must make. Do the same thing with selection sort. In general these sorting aglorithms are considered bad, but do they offer any advantages? Are there contexts where one might consider using them?
