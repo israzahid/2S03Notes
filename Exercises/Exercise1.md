@@ -31,7 +31,8 @@
 
 3) If a and b are instaniated boolean variables, what does the following evaluate to? Do you need more information? Why?
 
-!((a || b) && !(b || ! a || ! b))
+	`!((a || b) && !(b || ! a || ! b))`
+   
 
 4) Consider these variable declarations:
 int x = 2;
