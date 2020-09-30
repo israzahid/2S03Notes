@@ -46,22 +46,24 @@
 	```
 
 4) Consider these variable declarations:
+```
 int x = 2;
 char c = 'a';
-
+```
 What do the following lines of Java evaluate to? Explain why. Hint: Look up the ACSII index table.
-a. x + c;
-	`99` becuase a = 99 on ACSII
-b. "" + c + x;
-	```
-	ain
-	a2
-	```
-c. x + c + "";
-	```
-	ain
-	99
-	```
+	
+	1. x + c;
+		`99` becuase a = 99 on ACSII
+	2. "" + c + x;
+		```
+		ain
+		a2
+		```
+	3. x + c + "";
+		```
+		ain
+		99
+		```
 
 5) 
 a) Tinker around with some of the Java operations. Find something which suprised you. Does something behave differently from other languages you've used? Hopefully, some of you will be willing to share what you found with the class. 
