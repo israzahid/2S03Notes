@@ -50,13 +50,21 @@ int x = 2;
 char c = 'a';
 
 What do the following lines of Java evaluate to? Explain why. Hint: Look up the ACSII index table.
-a) x + c;
-b) "" + c + x;
-c) x + c + "";
+a. x + c;
+	`99` becuase a = 99 on ACSII
+b. "" + c + x;
+	```
+	ain
+	a2
+	```
+c. x + c + "";
+	```
+	ain
+	99
+	```
 
-5) a)
-
-Tinker around with some of the Java operations. Find something which suprised you. Does something behave differently from other languages you've used? Hopefully, some of you will be willing to share what you found with the class. 
+5) 
+a) Tinker around with some of the Java operations. Find something which suprised you. Does something behave differently from other languages you've used? Hopefully, some of you will be willing to share what you found with the class. 
 
 b) Do some indepdent research what are & and | actually doing? Why does it functionally look equivalent to && and ||?
 - & and | evaluates both operations while && || evaluate the second only if the first one is false
@@ -64,7 +72,7 @@ b) Do some indepdent research what are & and | actually doing? Why does it funct
 6) NO IF STATEMENT CHALLANGE: Implement the following methods without using an if statement; only using material we have covered thus far.
 
 a) public static double myAbsoluteValue(double x){
-	//returns the absoluate value of x
+	return Math.abs(x);
 }
 
 b) You're ordering pizzas for a party. In general, a child eats 2 slices of pizza, and adult eats 3, and a teenager eats 4. Pizzas have 8 slices total. Implement the function below which gives you the number of guests of each age group and returns the number of pizzas you should order. Bonus: find a solution without using the math library.
