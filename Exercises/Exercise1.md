@@ -2,6 +2,7 @@
 
 1) What are the differences between statically and dynamically typed langauges, what are the advantages of each?
    <br/> 
+   <br/>
    **Statically Typed:**
    - if the variable type is known at compile time
    &nbsp; 
@@ -11,8 +12,6 @@
       - the ability to deduce the type of a variable on its own
    
    *Advantage:* all kinds of checking can be done by the compiler, therfore a lot of trivial bugs can be caught earlier on
-   
-   <br/>
    
    **Dynamically Typed:**
       - the type is associated with run time values
