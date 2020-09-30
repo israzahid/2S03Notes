@@ -39,7 +39,7 @@ for(int i = 0; i < n; i++){
 	}
 }
 ```
-Answer: `total = n + (n - 1) + (n - 2) + ... + 1 = n(n + 1)/2
+Answer: `total = n + (n - 1) + (n - 2) + ... + 1 = n(n + 1)/2`
 2) In the videos we saw a method similar to below:
 
 	public static void nested(int outer, int inner) {
