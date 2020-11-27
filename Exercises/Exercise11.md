@@ -9,13 +9,13 @@
 </ol>
 <pre><code>1					5	1			1			5		1
  \				   /	 \ 			 \		   /		 \ 
-  2	       	      4		  2			  5	      4			  5
-   \		     /		   \		 /		 /			 /
-    3		    3			3		2		2			4
+  2				  4		  2			  5	      4			  5
+   \			 /		   \		 /		 /			 /
+    3			3			3		2		2			4
      \		   /			 \		 \		 \		   /	
       4		  2				  5		  4		  3		  2	
-	\	 /				 /		 /		 /		   \
-	  5	1				4		3		1			3
+	   \	 /				 /		 /		 /		   \
+	    5	1				4		3		1			3
 </code></pre>
 <ul>
 <li>to generate worse case, put numbers in a line and take one off most extreme ends
@@ -78,7 +78,7 @@
 	int value
 	Node right;
 	Node left;
-	
+
 	public Node(int value) {
 		this.value = value;
 	}
@@ -102,4 +102,56 @@ public void insertRec(Node node, int value) {
 <ol start="6">
 <li>Implement a BST with delete functionality, as seen in the videos.</li>
 </ol>
+<pre><code>public void delete(int value) {
+	if (root == null) {
+		return;
+	}
+	deleteRec(root, value);
+}
+
+public void deleteRec(Node node, int value) {
+	// 3 cases: leaf, 1 child, 2 children
+	if (node.leaf()) {
+		if (node.value == value) {
+			node = null;
+		}
+		return; // or just dont do anything
+	}
+	else if (!node.hasLeftChild()) {
+		if (node.value &gt; value) {
+			return;
+		}
+		else if (node.value &lt; value) {
+			deleteRec(node.right, value);
+		}
+		else if (node.value == value) {
+			node = node.right;
+		}
+	}
+	else if (!node.hasRightChild()) {
+		if (node.value &gt; value) {
+			deleteRec(node.left, value);
+		}
+		else if (node.value &lt; value) {
+			return;
+		}
+		else if (node.value == value) {
+			node = node.left;
+		}
+	}
+	else {
+		if (node.value &gt; value) {
+			deleteRec(node.left, value);
+		}
+		else if (node.value &lt; value) {
+			deleteRec(node.right, value);
+		}
+		else if (node.value == value) {
+			int k = getMinRec(node.right);
+			node.value = k;
+			deleteRec(node.right, k);
+		}		
+	}
+}
+</code></pre>
 
