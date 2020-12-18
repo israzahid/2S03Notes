@@ -55,7 +55,7 @@ public void insertAt (int value, int index) {
 	Node newNode = new Node(value);
 	if (isEmpty()) {
 		head = newNode;
-	}
+	} 
 	else if (index == 0) {
 		newNode.next = head;
 		head = newNode;
