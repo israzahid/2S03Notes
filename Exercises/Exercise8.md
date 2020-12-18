@@ -32,9 +32,25 @@ public void appendBack(int value) {
 </li>
 </ul>
 <ol start="2">
-<li>
-<p>Implement the the getLength method in LinkedList. Come up with two different implementations of this. What are the advantages/disadvantages of each way?</p>
+<li>Implement the the getLength method in LinkedList. Come up with two different implementations of this. What are the advantages/disadvantages of each way?</li>
+</ol>
+<ul>
+<li>First Method
+<ul>
+<li>modify a variable length as we add and remove elements</li>
+<li>advantages: will not need to loop through the entire list to figure out the length, simply need to return length</li>
+<li>disadvantages: with methods such as removeAll, will need to remove each time something is removed</li>
+</ul>
 </li>
+<li>Second Method
+<ul>
+<li>loop through entire list and add until there is a null node</li>
+<li>advantages: method explicitly for counting the list, less error prone</li>
+<li>disadvantage: could add time complexity of n as we would need to traverse the entire list instead of just return a value</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
 <li>
 <p>Implement removeAll, insertAt, and contains in LinkedList</p>
 <pre><code>public void contains (int value) {
